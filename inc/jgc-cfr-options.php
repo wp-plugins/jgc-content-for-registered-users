@@ -31,6 +31,7 @@ function jgccfr_sanitize_options($input) {
 	
 	$input['texto_mensaje'] = sanitize_text_field( $input['texto_mensaje'] );
 	$input['color_mensaje'] = ( in_array( $input['color_mensaje'], array( 'azul', 'verde', 'rojo', 'naranja', 'negro' ) ) ) ? $input['color_mensaje'] : 'azul';
+	$input['metabox_priority'] = ( in_array( $input['metabox_priority'], array( 'high', 'default' ) ) ) ? $input['metabox_priority'] : 'high';
 	
 	return $input;
 }
@@ -46,6 +47,23 @@ function jgccfr_setting_page() { ?>
 		
 		<table class="form-table">
 			<tr valign="top">
+				<th scope="row"><?php _e( 'Metabox priority', 'jgccfr-plugin' ); ?></th>
+				<td>
+					<input type="radio" 
+					name="jgccfr_opciones[metabox_priority]"
+					<?php echo checked( $jgccfr_opciones['metabox_priority'], 'high', false ); ?>
+					value="high" /> <?php _e( 'High', 'jgccfr-plugin' ); ?>&nbsp;&nbsp;&nbsp;
+					
+					<input type="radio" 
+					name="jgccfr_opciones[metabox_priority]"
+					<?php echo checked( $jgccfr_opciones['metabox_priority'], 'default', false ); ?>
+					value="default" /> <?php _e( 'Default', 'jgccfr-plugin' ); ?>&nbsp;&nbsp;&nbsp;
+					
+					<p><i>(<?php _e( "'High'  displays the metabox on top of right side on edit screen. 'Default' displays the metabox on right side but no on top", 'jgccfr-plugin' ); ?>)</i></p>
+				</td>
+			</tr>
+		
+			<tr valign="top">
 				<th scope="row"><?php _e( 'Message text', 'jgccfr-plugin' ); ?></th>
 				<td>
 					<input type="text"
@@ -53,7 +71,7 @@ function jgccfr_setting_page() { ?>
 					value="<?php echo __( esc_attr($jgccfr_opciones['texto_mensaje'] ), 'jgccfr-plugin'); ?>" 
 					size="80" >
 					
-					<p><i>(<?php _e('Message to be displayed to users not registered replacing the post content', 'jgccfr-plugin'); ?>)</i></p>
+					<p><i>(<?php _e( 'Message to be displayed to users not registered replacing the post content', 'jgccfr-plugin' ); ?>)</i></p>
 				</td>
 			</tr>
 			

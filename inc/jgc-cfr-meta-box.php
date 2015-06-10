@@ -16,9 +16,11 @@ add_action( 'add_meta_boxes', 'jgccfr_meta_box_init' );
 function jgccfr_meta_box_init() {
 	
     $screens = array( 'post', 'page' );
+	$priority = ( jgccfr_option( 'metabox_priority' ) != '' ) ? jgccfr_option( 'metabox_priority' ) : 'high' ;
+	
 	
 	foreach ($screens as $screen){
-		add_meta_box( 'jgccfr_meta_box_id', 'JGC Content for Registered Users', 'jgccfr_form_meta_box', $screen, 'side', 'high' );
+		add_meta_box( 'jgccfr_meta_box_id', 'JGC Content for Registered Users', 'jgccfr_form_meta_box', $screen, 'side', $priority );
 	}
 	
 }

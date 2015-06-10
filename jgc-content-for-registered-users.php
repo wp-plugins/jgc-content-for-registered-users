@@ -2,7 +2,7 @@
 /*
 Plugin Name: JGC Content for Registered Users
 Description: This plugin lets you hide the content of posts and pages to unregistered users.
-Version: 1.0.0
+Version: 1.1.0
 Author: GalussoThemes
 Author URI: http://galussothemes.com
 Text Domain: jgccfr-plugin
@@ -14,7 +14,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-define ( 'JGC_CFR_VERSION', '1.0.0' );
+define ( 'JGC_CFR_VERSION', '1.1.0' );
 
 register_activation_hook( __FILE__, 'jgccfr_install');
 function jgccfr_install(){
@@ -29,12 +29,23 @@ function jgccfr_install(){
 		$arr_opciones = array(
 			'color_mensaje' => 'azul',
 			'texto_mensaje' => __('This content is for registered users only.', 'jgccfr-plugin'),
+			'metabox_priority' => 'high',
 		);
 		
 		//Actualizar opciones
 		update_option( 'jgccfr_opciones', $arr_opciones );
 		
 	}
+	
+}
+
+// Nuevas opciones
+$jgccfr_opciones = get_option( 'jgccfr_opciones');
+
+if ( !isset( $jgccfr_opciones['metabox_priority'] ) ){
+	
+	$jgccfr_opciones['metabox_priority'] = 'high' ;
+	update_option( 'jgccfr_opciones', $jgccfr_opciones );
 	
 }
 

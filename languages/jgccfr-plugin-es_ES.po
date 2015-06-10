@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: JGC Content for Registered Users\n"
-"POT-Creation-Date: 2015-06-05 16:53+0100\n"
-"PO-Revision-Date: 2015-06-05 16:53+0100\n"
+"POT-Creation-Date: 2015-06-10 12:24+0100\n"
+"PO-Revision-Date: 2015-06-10 12:28+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: es_ES\n"
@@ -18,58 +18,79 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: inc/jgc-cfr-functions.php:20 inc/jgc-cfr-meta-box.php:81
+#: inc/jgc-cfr-functions.php:20 inc/jgc-cfr-meta-box.php:83
 msgid "Register"
 msgstr "Registrarse"
 
-#: inc/jgc-cfr-functions.php:22 inc/jgc-cfr-meta-box.php:87
+#: inc/jgc-cfr-functions.php:22 inc/jgc-cfr-meta-box.php:89
 msgid "Log in"
 msgstr "Entrar"
 
-#: inc/jgc-cfr-meta-box.php:37
+#: inc/jgc-cfr-meta-box.php:39
 msgid "Content for registered users only."
 msgstr "Contenido solo para usuarios registrados."
 
-#: inc/jgc-cfr-options.php:41
+#: inc/jgc-cfr-options.php:42
 msgid "Options"
 msgstr "Opciones"
 
-#: inc/jgc-cfr-options.php:49
+#: inc/jgc-cfr-options.php:50
+msgid "Metabox priority"
+msgstr "Prioridad del metabox"
+
+#: inc/jgc-cfr-options.php:55
+msgid "High"
+msgstr "Alta"
+
+#: inc/jgc-cfr-options.php:60
+msgid "Default"
+msgstr "Por defecto"
+
+#: inc/jgc-cfr-options.php:62
+msgid ""
+"'High'  displays the metabox on top of right side on edit screen. 'Default' "
+"displays the metabox on right side but no on top"
+msgstr ""
+"'Alta' muestra el metabox en la parte superior del lado derecho de la "
+"pantalla de edición. 'Por defecto' muestra el metabox en la parte derecha de "
+"la pantalla de edición pero no en la parte superior."
+
+#: inc/jgc-cfr-options.php:67
 msgid "Message text"
 msgstr "Texto del mensaje"
 
-#: inc/jgc-cfr-options.php:56
+#: inc/jgc-cfr-options.php:74
 msgid ""
 "Message to be displayed to users not registered replacing the post content"
 msgstr ""
 "Mensaje que se mostrará a usuarios no registrados sustituyendo al contenido "
 "del post"
 
-#: inc/jgc-cfr-options.php:61
+#: inc/jgc-cfr-options.php:79
 msgid "Message color"
 msgstr "Color del mensaje"
 
-#: inc/jgc-cfr-options.php:66
+#: inc/jgc-cfr-options.php:84
 msgid "Blue"
 msgstr "Azul"
 
-#: inc/jgc-cfr-options.php:71
+#: inc/jgc-cfr-options.php:89
 msgid "Green"
 msgstr "Verde"
 
-#: inc/jgc-cfr-options.php:76
+#: inc/jgc-cfr-options.php:94
 msgid "Orange"
 msgstr "Naranja"
 
-#: inc/jgc-cfr-options.php:81
+#: inc/jgc-cfr-options.php:99
 msgid "Red"
 msgstr "Rojo"
 
-#: inc/jgc-cfr-options.php:86
+#: inc/jgc-cfr-options.php:104
 msgid "Black"
 msgstr "Negro"
 
-#: inc/jgc-cfr-options.php:94
+#: inc/jgc-cfr-options.php:112
 msgid "Save changes"
 msgstr "Guardar cambios"
 

@@ -3,7 +3,7 @@ Contributors: GalussoThemes
 Tags: content, post, posts, page, pages, user, users, edit, shortcode
 Requires at least: 3.1
 Tested up to: 4.2.2
-Stable tag: 1.0.0
+Stable tag: 1.1.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -35,5 +35,8 @@ The metabox lets you hide the content of pages and posts individually. The edito
 
 == Changelog ==
 
+= 1.1.0 =
+* Added option 'Metabox priority'.
+
 = 1.0.0 =
-* Initial Release
+* Initial Release.
